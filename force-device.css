@@ -79,9 +79,11 @@
 .force-md .col-lg-2,
 .force-md .col-lg-1 {width:100%;}
 
-/*no force-lg above needed, as they would behave the same way...*/
+/*no force-lg above needed, because there is nothing 'above lg' */
 
-/*force-xs on xs columns*/
+/* here we force each col-*-* to behave as it would on the corresponsing device, using the same %s as Bootstrap does */
+
+/*force-xs to xs columns*/
 .force-xs .col-xs-12{width:100%;}
 .force-xs .col-xs-11{width:91.66666666666666%;}
 .force-xs .col-xs-10{width:83.33333333333334%;}
@@ -95,7 +97,7 @@
 .force-xs .col-xs-2{width:16.666666666666664%;}
 .force-xs .col-xs-1{width:8.333333333333332%;}
 
-/*force-sm on sm columns*/
+/*force-sm to sm columns*/
 .force-sm .col-sm-12{width:100%;}
 .force-sm .col-sm-11{width:91.66666666666666%;}
 .force-sm .col-sm-10{width:83.33333333333334%;}
@@ -109,7 +111,7 @@
 .force-sm .col-sm-2{width:16.666666666666664%;}
 .force-sm .col-sm-1{width:8.333333333333332%;}
 
-/*force-md on md columns*/
+/*force-md to md columns*/
 .force-md .col-md-12{width:100%;}
 .force-md .col-md-11{width:91.66666666666666%;}
 .force-md .col-md-10{width:83.33333333333334%;}
@@ -122,3 +124,17 @@
 .force-md .col-md-3{width:25%;}
 .force-md .col-md-2{width:16.666666666666664%;}
 .force-md .col-md-1{width:8.333333333333332%;}
+
+/*force-lg to lg columns*/
+.force-lg .col-lg-12{width:100%;}
+.force-lg .col-lg-11{width:91.66666666666666%;}
+.force-lg .col-lg-10{width:83.33333333333334%;}
+.force-lg .col-lg-9{width:75%;}
+.force-lg .col-lg-8{width:66.66666666666666%;}
+.force-lg .col-lg-7{width:58.333333333333336%;}
+.force-lg .col-lg-6{width:50%;}
+.force-lg .col-lg-5{width:41.66666666666667%;}
+.force-lg .col-lg-4{width:33.33333333333333%;}
+.force-lg .col-lg-3{width:25%;}
+.force-lg .col-lg-2{width:16.666666666666664%;}
+.force-lg .col-lg-1{width:8.333333333333332%;}
