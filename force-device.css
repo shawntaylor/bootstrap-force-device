@@ -82,7 +82,6 @@
 /*no force-lg above needed, because there is nothing 'above lg' */
 
 /* here we force each col-*-* to behave as it would on the corresponsing device, using the same %s as Bootstrap does */
-
 /*force-xs to xs columns*/
 .force-xs .col-xs-12{width:100%;}
 .force-xs .col-xs-11{width:91.66666666666666%;}
