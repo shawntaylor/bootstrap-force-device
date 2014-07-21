@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/force-device.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet"><!-- JUST USED FOR THIS DEMO -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+			
+      <div class="page-header">
+        <h1>Bootstrap Force Device</h1>
+        <p class="lead">Force Bootstrap's grid to display as if on another device. Load <code>.force-bootstrap.css</code> into your document, and layout your columns as you normally would. Then add .force-* to an ancestor of the grid classes, and the CSS will do the rest.</p>
+      </div>
+			
+	<h3>Forces the grid to behave as if it's on the device of your choosing<small> .force-xs, .force-sm, .force-md or .force-lg</small></h3>
+		<!-- <p>The columns below are within a <code>.force-xs</code> div, and behave as if on a .xs screen -->
+						
+	  	<div class="force-xs">
+				<div class="row">
+		      <div class="col-lg-8">.col-lg-8</div>      
+		      <div class="col-lg-4">.col-lg-4</div>
+		      <div class="col-md-6">.col-md-6</div>      
+		      <div class="col-sm-2">.col-sm-2</div>
+					<div class="col-xs-6">.col-xs-6</div>
+					<div class="col-xs-4">.col-xs-4</div>
+					<div class="col-xs-2">.col-xs-2</div>
+				</div>
+			</div>
+			<br>
+			
+			<p>Just add <code>.force-xs</code> (or sm, md, or lg) to an ancestor div of the column classes, and the CSS does the rest.</p>
+<pre>
+<b>&lt;div class="force-xs"&gt;</b>
+  &lt;div class="row"&gt;
+    &lt;div class="col-lg-8"&gt;.col-lg-8&lt;/div&gt;      
+    &lt;div class="col-lg-4"&gt;.col-lg-4&lt;/div&gt;
+    &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;      
+    &lt;div class="col-sm-2"&gt;.col-sm-2&lt;/div&gt;
+    &lt;div class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+    &lt;div class="col-xs-4"&gt;.col-xs-4&lt;/div&gt;
+    &lt;div class="col-xs-2"&gt;.col-xs-2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+			
+			<hr>
+			
+				<h3>Works on combined .col-* classes the way you would expect</h3>
+				<p><code>highlight</code> shows active class
+				<div class="force-xs">
+					<div class="row">
+			      <div class="col-sm-12 col-xs-10">.col-sm-12 <code>.col-xs-10</code></div>      
+			      <div class="col-sm-4 col-xs-2">.col-sm-4 <code>.col-xs-2</code></div>
+			      <div class="col-md-8 col-xs-6">.col-md-8 <code>.col-xs-6</code></div>      
+			      <div class="col-md-4 col-xs-6">.col-md-4 <code>.col-xs-6</code></div>
+			      <div class="col-lg-2 col-xs-8">.col-lg-2 <code>.col-xs-8</code></div>      
+			      <div class="col-lg-6 col-xs-4">.col-lg-6 <code>.col-xs-4</code></div>
+						<div class="col-lg-2 col-md-6 col-sm-8 col-xs-10"><i>Even with many col classes:</i> .col-lg-2 .col-md-6 .col-sm-8 <code>.col-xs-10</code></div>
+						<div class="col-lg-2 col-md-6 col-sm-8 col-xs-10"><i>Regardless of the order in which you declare them:</i> .col-lg-2 <code>.col-xs-10</code> .col-md-6 .col-sm-8 </div>
+					</div>
+				</div>
+				<br><hr>
+				
+				<h3>Works within modals <small>which I'm pretty sure is the primary use case</small></h3>
+				<p>The content in all three of these modals, including the col-classes, <strong>is identical</strong>. I've put the force-* class on the modal-body, but you can put it on any ancestor of the col-classes.
+				<br><br>
+				<a href="#myModal" role="button" class="btn btn-default" data-toggle="modal">Launch normal modal</a>
+				<a href="#myModal-sm" role="button" class="btn btn-default" data-toggle="modal">Launch modal with .force-sm</a>
+				<a href="#myModal-xs" role="button" class="btn btn-default" data-toggle="modal">Launch modal with .force-xs</a>
+
+		<!-- normal modal -->
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h3 id="myModalLabel">Normal modal</h3>
+					</div>
+					<div class="modal-body">
+				      <div class="col-lg-4 col-sm-6 col-xs-7">.col-lg-4 .col-sm-6 .col-xs-7</div>      
+				      <div class="col-lg-4 col-sm-6 col-xs-5">col-lg-4 .col-sm-6 .col-xs-5</div>
+				      <div class="col-lg-4 col-sm-6">.col-lg-4 .col-sm-6</div>
+							<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						<button class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- sm modal -->
+		<div id="myModal-sm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h3 id="myModalLabel">.sm modal</h3>
+					</div>
+					<!-- I like to put force-* here, but you can put it on any parent of the cols -->
+					<div class="modal-body force-sm">
+				      <div class="col-lg-4 col-sm-6 col-xs-7">.col-lg-4 .col-sm-6 .col-xs-7</div>      
+				      <div class="col-lg-4 col-sm-6 col-xs-5">col-lg-4 .col-sm-6 .col-xs-5</div>
+				      <div class="col-lg-4 col-sm-6">.col-lg-4 .col-sm-6</div>
+							<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						<button class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- xs modal -->
+		<div id="myModal-xs" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h3 id="myModalLabel">.xs modal</h3>
+					</div>
+					<!-- I like to put force-* here, but you can put it on any parent of the cols -->
+					<div class="modal-body force-xs">
+				      <div class="col-lg-4 col-sm-6 col-xs-7">.col-lg-4 .col-sm-6 .col-xs-7</div>      
+				      <div class="col-lg-4 col-sm-6 col-xs-5">col-lg-4 .col-sm-6 .col-xs-5</div>
+				      <div class="col-lg-4 col-sm-6">.col-lg-4 .col-sm-6</div>
+							<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						<button class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+<pre>
+<b>&lt;div class="modal-body force-xs"&gt;</b>
+  &lt;div class="col-lg-4 col-sm-6 col-xs-7"&gt;.col-lg-4 .col-sm-6 .col-xs-7&lt;/div&gt;      
+  &lt;div class="col-lg-4 col-sm-6 col-xs-5"&gt;col-lg-4 .col-sm-6 .col-xs-5&lt;/div&gt;
+  &lt;div class="col-lg-4 col-sm-6"&gt;.col-lg-4 .col-sm-6&lt;/div&gt;
+  &lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		
+		<hr>
+		
+		
+		<h3>What doesn't work:</h3>
+		<P>Offsets: It picks up the width from your declared device, but not the offset itself, so they end up all over the place
+		<p>Pushes: Same probem as offsets
+		<p>Any of the .hidden-* classes: Pretty straight-forward, so I should do this in an upcoming release
+
+</div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
