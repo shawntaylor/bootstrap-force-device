@@ -3,7 +3,7 @@ bootstrap-force-device
 
 Simulate a different device width within a given bootstrap container.
 
-DEMO: https://dl.dropboxusercontent.com/u/838533/LiveSites/bootstrap-force-device/index.html
+DEMO: http://shawntaylor.github.io/bootstrap-force-device/
 
 Only requires CSS. Just add the .force-device CSS into your project AFTER the Bootstrap CSS, and add .force-xs, .force-sm, .force-md or .force-lg to any div containing the content you want to force to behave like it's on a different device. That's it.
 

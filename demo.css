@@ -1,0 +1,15 @@
+[class^=col-] {
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #eee;
+border: 1px solid #ddd;
+margin-top:10px;
+}
+
+b{
+		padding: 2px 4px;
+		color: #c7254e;
+		background-color: #f9f2f4;
+		border-radius: 4px;
+		font-weight:normal;
+	}
